@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c202a71215836f0419a2f62239d3f50c
+timeCreated: 1522780042
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - bezier: {instanceID: 0}
+  - teleportSprite: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
