@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 95768412392192228}
   - component: {fileID: 64063941186345338}
   m_Layer: 0
-  m_Name: Grundriss-test5
+  m_Name: Burg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
