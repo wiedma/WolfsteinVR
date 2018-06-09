@@ -9,20 +9,27 @@ public class TextBox : MonoBehaviour {
 
 	public string beschreibung = "Beschreibung einfügen";
 	public int schriftgröße = 12;
+	public float entfernung = 0.1f;
 	public GameObject textPanel;
 
 	private GameObject canvas;
 	private GameObject textPanelObject;
+	private GameObject player;
+	private bool repositionAtUpdate = false;
 
 	// Use this for initialization
 	void Start () {
+		//UI initialization
 		canvas = GameObject.Find("Canvas");
 		textPanelObject = Instantiate (textPanel, canvas.transform.position, canvas.transform.rotation) as GameObject;
 		textPanelObject.transform.SetParent (canvas.transform);
 		Text textObject = textPanelObject.GetComponentInChildren<Text> ();
 		textObject.fontSize = schriftgröße;
 		textObject.text = beschreibung;
+		textPanelObject.transform.localScale = new Vector3 (0.001f, 0.001f, 1f);
 		textPanelObject.SetActive (false);
+
+		//Event Handling
 		EventTrigger trigger = GetComponent<EventTrigger>();
 		EventTrigger.Entry entry1 = new EventTrigger.Entry();
 		entry1.eventID = EventTriggerType.PointerEnter;
@@ -32,13 +39,38 @@ public class TextBox : MonoBehaviour {
 		entry2.callback.AddListener((data) => { OnPointerExitDelegate((PointerEventData)data); });
 		trigger.triggers.Add (entry1);
 		trigger.triggers.Add (entry2);
+
+		//Find Player Object
+		player = GameObject.Find("Main Camera");
 	}
 
 	public void OnPointerEnterDelegate(PointerEventData data){
+		SetUIInFrontOfPlayer ();
 		textPanelObject.SetActive (true);
+		repositionAtUpdate = true;
 	}
 
 	public void OnPointerExitDelegate(PointerEventData data){
 		textPanelObject.SetActive (false);
+	}
+
+	public void SetUIInFrontOfPlayer(){
+		//Set UI in front the player
+		Vector3 playerPos = player.transform.position;
+		Vector3 forward = player.transform.forward;
+		Vector3 uiPos = playerPos + (forward * entfernung);
+
+		//Rotate it 180 degrees so it faces towards the player
+		Quaternion playerRotation = player.transform.rotation;
+		Vector3 uiRotation = playerRotation.eulerAngles;
+//		uiRotation = new Vector3 (uiRotation.x, uiRotation.y + 180, uiRotation.z);
+
+		canvas.transform.SetPositionAndRotation (uiPos, Quaternion.Euler (uiRotation));
+	}
+
+	public void Update(){
+		if (repositionAtUpdate) {
+			SetUIInFrontOfPlayer ();
+		}
 	}
 }
