@@ -1,57 +1,68 @@
 fileFormatVersion: 2
-guid: df10e67ce1bce7242a99b43d39d5170b
-timeCreated: 1528479770
+guid: d7bd75f54c9762949aafaf800b0b30f4
+timeCreated: 1530714528
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Plane
-    100004: Plane_001
-    100006: Plane_002
-    100008: Plane_003
-    100010: Plane_004
-    100012: Plane_005
-    100014: Plane_006
-    100016: Plane_007
-    100018: Plane_008
-    400000: //RootNode
-    400002: Plane
-    400004: Plane_001
-    400006: Plane_002
-    400008: Plane_003
-    400010: Plane_004
-    400012: Plane_005
-    400014: Plane_006
-    400016: Plane_007
-    400018: Plane_008
-    2300000: Plane
-    2300002: Plane_001
-    2300004: Plane_002
-    2300006: Plane_003
-    2300008: Plane_004
-    2300010: Plane_005
-    2300012: Plane_006
-    2300014: Plane_007
-    2300016: Plane_008
-    3300000: Plane
-    3300002: Plane_001
-    3300004: Plane_002
-    3300006: Plane_003
-    3300008: Plane_004
-    3300010: Plane_005
-    3300012: Plane_006
-    3300014: Plane_007
-    3300016: Plane_008
-    4300000: Plane_008
-    4300002: Plane_007
-    4300004: Plane_006
-    4300006: Plane_005
-    4300008: Plane_004
-    4300010: Plane_003
-    4300012: Plane_002
-    4300014: Plane_001
-    4300016: Plane
+    100000: Cone
+    100002: Cube
+    100004: Cube_001
+    100006: Cube_002
+    100008: Cube_003
+    100010: Cube_004
+    100012: Cylinder
+    100014: Cylinder_001
+    100016: Cylinder_002
+    100018: Empty
+    100020: //RootNode
+    400000: Cone
+    400002: Cube
+    400004: Cube_001
+    400006: Cube_002
+    400008: Cube_003
+    400010: Cube_004
+    400012: Cylinder
+    400014: Cylinder_001
+    400016: Cylinder_002
+    400018: Empty
+    400020: //RootNode
+    2300000: Cone
+    2300002: Cube
+    2300004: Cube_001
+    2300006: Cube_002
+    2300008: Cube_003
+    2300010: Cube_004
+    2300012: Cylinder
+    2300014: Cylinder_001
+    2300016: Cylinder_002
+    3300000: Cone
+    3300002: Cube
+    3300004: Cube_001
+    3300006: Cube_002
+    3300008: Cube_003
+    3300010: Cube_004
+    3300012: Cylinder
+    3300014: Cylinder_001
+    3300016: Cylinder_002
+    4300000: Cube_004
+    4300002: Cube_003
+    4300004: Cube_002
+    4300006: Cube_001
+    4300008: Cube
+    4300010: Cylinder_001
+    4300012: Cone
+    4300014: Cylinder_002
+    4300016: Cylinder
+    6400000: Cone
+    6400002: Cube
+    6400004: Cube_001
+    6400006: Cube_002
+    6400008: Cube_003
+    6400010: Cube_004
+    6400012: Cylinder
+    6400014: Cylinder_001
+    6400016: Cylinder_002
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -83,7 +94,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1

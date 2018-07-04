@@ -9,20 +9,35 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1569562589291420}
+  m_RootGameObject: {fileID: 1611486166462638}
   m_IsPrefabParent: 1
---- !u!1 &1569562589291420
+--- !u!1 &1281488665323364
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4558831148155134}
-  - component: {fileID: 33071861343587726}
-  - component: {fileID: 23839293049682326}
-  - component: {fileID: 95768412392192228}
-  - component: {fileID: 64063941186345338}
+  - component: {fileID: 4295384464007390}
+  - component: {fileID: 33034660819104504}
+  - component: {fileID: 23645064709756560}
+  - component: {fileID: 64066925230276628}
+  m_Layer: 0
+  m_Name: Plane_009
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1611486166462638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4798724907992610}
+  - component: {fileID: 95179233024495084}
   m_Layer: 0
   m_Name: Burg
   m_TagString: Untagged
@@ -30,25 +45,39 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4558831148155134
+--- !u!4 &4295384464007390
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1569562589291420}
+  m_GameObject: {fileID: 1281488665323364}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+  m_Father: {fileID: 4798724907992610}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4798724907992610
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1611486166462638}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4295384464007390}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23839293049682326
+--- !u!23 &23645064709756560
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1569562589291420}
+  m_GameObject: {fileID: 1281488665323364}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -56,7 +85,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 73feec334e1d53541a2ea20658b05db2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -75,19 +104,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33071861343587726
+--- !u!33 &33034660819104504
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1569562589291420}
-  m_Mesh: {fileID: 4300000, guid: d2209ab21d3e5854691237e1377c6bf2, type: 3}
---- !u!64 &64063941186345338
+  m_GameObject: {fileID: 1281488665323364}
+  m_Mesh: {fileID: 4300002, guid: caa65d8ed9c1c57478a64aa7e7fefc5d, type: 3}
+--- !u!64 &64066925230276628
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1569562589291420}
+  m_GameObject: {fileID: 1281488665323364}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -95,16 +124,16 @@ MeshCollider:
   m_Convex: 0
   m_InflateMesh: 0
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: d2209ab21d3e5854691237e1377c6bf2, type: 3}
---- !u!95 &95768412392192228
+  m_Mesh: {fileID: 4300002, guid: caa65d8ed9c1c57478a64aa7e7fefc5d, type: 3}
+--- !u!95 &95179233024495084
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1569562589291420}
+  m_GameObject: {fileID: 1611486166462638}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: d2209ab21d3e5854691237e1377c6bf2, type: 3}
+  m_Avatar: {fileID: 9000000, guid: caa65d8ed9c1c57478a64aa7e7fefc5d, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
