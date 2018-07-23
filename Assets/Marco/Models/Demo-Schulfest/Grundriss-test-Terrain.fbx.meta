@@ -1,80 +1,21 @@
 fileFormatVersion: 2
-guid: caa65d8ed9c1c57478a64aa7e7fefc5d
-timeCreated: 1530715783
+guid: f41854ca4b3c1d34a9ea949065ee9c7f
+timeCreated: 1532350721
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
     100000: Grid
     100002: //RootNode
-    100004: Plane
-    100006: Plane_001
-    100008: Plane_002
-    100010: Plane_003
-    100012: Plane_004
-    100014: Plane_005
-    100016: Plane_006
-    100018: Plane_007
-    100020: Plane_008
-    100022: Plane_009
+    100004: Sun
     400000: Grid
     400002: //RootNode
-    400004: Plane
-    400006: Plane_001
-    400008: Plane_002
-    400010: Plane_003
-    400012: Plane_004
-    400014: Plane_005
-    400016: Plane_006
-    400018: Plane_007
-    400020: Plane_008
-    400022: Plane_009
+    400004: Sun
     2300000: Grid
-    2300002: Plane
-    2300004: Plane_001
-    2300006: Plane_002
-    2300008: Plane_003
-    2300010: Plane_004
-    2300012: Plane_005
-    2300014: Plane_006
-    2300016: Plane_007
-    2300018: Plane_008
-    2300020: Plane_009
     3300000: Grid
-    3300002: Plane
-    3300004: Plane_001
-    3300006: Plane_002
-    3300008: Plane_003
-    3300010: Plane_004
-    3300012: Plane_005
-    3300014: Plane_006
-    3300016: Plane_007
-    3300018: Plane_008
-    3300020: Plane_009
     4300000: Grid
-    4300002: Plane_009
-    4300004: Plane_008
-    4300006: Plane_007
-    4300008: Plane_006
-    4300010: Plane_005
-    4300012: Plane_004
-    4300014: Plane_003
-    4300016: Plane_002
-    4300018: Plane_001
-    4300020: Plane
     6400000: Grid
-    6400002: Plane
-    6400004: Plane_001
-    6400006: Plane_002
-    6400008: Plane_003
-    6400010: Plane_004
-    6400012: Plane_005
-    6400014: Plane_006
-    6400016: Plane_007
-    6400018: Plane_008
-    6400020: Plane_009
-    7400000: Default Take
-    9500000: //RootNode
+    10800000: Sun
   materials:
     importMaterials: 1
     materialName: 0
@@ -144,7 +85,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
