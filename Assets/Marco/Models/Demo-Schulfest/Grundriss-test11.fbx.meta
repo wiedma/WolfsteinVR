@@ -1,40 +1,35 @@
 fileFormatVersion: 2
-guid: 8bbeaa1655ea8b8478f0d986fcc8924e
-timeCreated: 1532350700
-licenseType: Free
+guid: 9c7a7b97c57b4984b857393e5997b45f
 ModelImporter:
-  serializedVersion: 21
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: Cylinder.003
     100002: Empty.001
     100004: //RootNode
     100006: Plane.008
-    100008: Plane.008_MeshPart0
-    100010: Plane.008_MeshPart1
     400000: Cylinder.003
     400002: Empty.001
     400004: //RootNode
     400006: Plane.008
-    400008: Plane.008_MeshPart0
-    400010: Plane.008_MeshPart1
+    2100000: Material
+    2100002: Material.000
     2300000: Cylinder.003
-    2300002: Plane.008_MeshPart0
-    2300004: Plane.008_MeshPart1
+    2300002: Plane.008
     3300000: Cylinder.003
-    3300002: Plane.008_MeshPart0
-    3300004: Plane.008_MeshPart1
-    4300000: Plane.008_MeshPart0
-    4300002: Plane.008_MeshPart1
-    4300004: Cylinder.003
+    3300002: Plane.008
+    4300000: Plane.008
+    4300002: Cylinder.003
     6400000: Cylinder.003
-    6400002: Plane.008_MeshPart0
-    6400004: Plane.008_MeshPart1
+    6400002: Plane.008
     7400000: Empty.001|EmptyAction.000
     9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -47,6 +42,8 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -71,11 +68,15 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -95,7 +96,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1

@@ -31,7 +31,7 @@ namespace VRStandardAssets.Utils
         [SerializeField] private float m_DoubleClickTime = 0.3f;    //The max time allowed between double clicks
         [SerializeField] private float m_SwipeWidth = 0.3f;         //The width of a swipe
 
-        
+
         private Vector2 m_MouseDownPosition;                        // The screen position of the mouse when Fire1 is pressed.
         private Vector2 m_MouseUpPosition;                          // The screen position of the mouse when Fire1 is released.
         private float m_LastMouseUpTime;                            // The time when Fire1 was last released.
@@ -57,7 +57,7 @@ namespace VRStandardAssets.Utils
             {
                 // When Fire1 is pressed record the position of the mouse.
                 m_MouseDownPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-            
+
                 // If anything has subscribed to OnDown call it.
                 if (OnDown != null)
                     OnDown();
@@ -182,7 +182,7 @@ namespace VRStandardAssets.Utils
             // If the swipe meets none of these requirements there is no swipe.
             return SwipeDirection.NONE;
         }
-        
+
 
         private void OnDestroy()
         {
