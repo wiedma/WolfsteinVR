@@ -69,7 +69,7 @@ namespace VRStandardAssets.Utils
         {
             m_ReticleTransform.position = hit.point;
             m_ReticleTransform.localScale = m_OriginalScale * hit.distance;
-            
+
             // If the reticle should use the normal of what has been hit...
             if (m_UseNormal)
                 // ... set it's rotation based on it's forward vector facing along the normal.

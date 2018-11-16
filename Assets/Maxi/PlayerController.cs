@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour {
 	// The current waypoint that the player is traveling to.
 	int currentWaypoint = 0;
 	// Flag that indicates whether the player is currently in motion.
-	bool isMoving = true; 
+	bool isMoving = true;
 
 	// Checks if any of the Waypoints are null.
 	void CheckWaypoints() {
@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour {
 				isMoving = false;
 				waypoints [currentWaypoint].ShowDescription ();
 			}
-		} 
+		}
 	}
 
 	// Called after the player clicks on the button to close a waypoint's description.
@@ -69,20 +69,20 @@ public class PlayerController : MonoBehaviour {
 			// Hide the description.
 			Debug.Log ("Hiding waypoint " + currentWaypoint);
 			waypoints [currentWaypoint].HideDescription ();
-			// If this is the last waypoint in the circuit, 
+			// If this is the last waypoint in the circuit,
 			// load the next scene.
 			if (currentWaypoint == waypoints.Length - 1) {
 				Debug.Log ("Reached end of tour.");
 				Debug.Log("Loading next scene");
 				LoadNextScene ();
 
-			} 
+			}
 			// If there are more waypoints, continue to the next waypoint.
 			else {
 				currentWaypoint++;
 				Debug.Log ("Next waypoint: " + currentWaypoint);
 				isMoving = true;
-			} 
+			}
 		} else {
 			Debug.Log ("ERROR: Something's wrong... Either we have not arrived at the waypoint, or the waypoint is null");
 		}
