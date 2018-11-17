@@ -51,6 +51,10 @@ public class MoveOnClick : MonoBehaviour {
 			//Move forward
 			controller.SimpleMove(forward * speed);
 		}
+        else
+        {
+            controller.SimpleMove(Vector3.zero);
+        }
 		
 	}
 }

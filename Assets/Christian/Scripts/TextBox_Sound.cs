@@ -48,8 +48,6 @@ public class TextBox_Sound : MonoBehaviour {
         //Find Player Object
         player = GameObject.Find("Main Camera");
 
-        //Find AudioSource Object
-        //audioSource = GameObject.FindGameObjectWithTag("audio").GetComponent<AudioSource>();
     }
 
     public void OnPointerEnterDelegate(PointerEventData data)
